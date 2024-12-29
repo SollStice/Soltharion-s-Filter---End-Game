@@ -1,0 +1,398 @@
+#------------------------------------------------------------------------
+# Soltharion's Loot Filter for Path of Exile 2 - End Game Maps Version
+#------------------------------------------------------------------------
+#
+# VERSION: 0.1
+# AUTHOR: Soltharion
+#
+#Author's Comment: This loot filter is designed for End Game Mapping, mainly T15. Due to the absence of Tier Filtering, every Rare item from Expert level will be shown. Update to tier will be released when GGG Allows it.
+
+
+#--------------------------
+# Uniques & Main Trading Currencies
+#--------------------------
+
+# -- Uniques --
+
+Show
+Rarity Unique
+SetFontSize 45
+SetTextColor 255 255 255
+SetBorderColor 255 255 255
+SetBackgroundColor 100 0 0 225
+PlayAlertSound 7 300
+PlayEffect Red
+MinimapIcon 2 Red Pentagon
+
+
+# -- Gold --
+
+Show
+BaseType == "Gold"
+StackSize >= 500
+SetFontSize 30
+SetTextColor 150 150 150
+SetBorderColor 255 255 255 0
+SetBackgroundColor 15 10 0 175
+
+Hide
+BaseType == "Gold"
+SetFontSize 30
+SetTextColor 150 150 150
+SetBorderColor 150 150 150 0
+SetBackgroundColor 15 10 0 175
+
+
+# -- Exalted Orbs --
+
+Show
+Class "Currency"
+BaseType  "Exalted Orb"
+SetFontSize 40
+SetTextColor 255 100 0
+SetBorderColor 255 170 0
+SetBackgroundColor 59 59 59 225
+PlayAlertSound 10 300
+PlayEffect Orange
+MinimapIcon 2 Orange Cross
+
+
+# -- Jewellers, Mirror & Divine --
+
+Show
+Class "Currency"
+BaseType  "Perfect Jeweller's Orb" "Greater Jeweller's Orb" "Mirror of Kalandra" "Divine Orb"
+SetFontSize 40
+SetTextColor 255 0 0
+SetBorderColor 255 0 0
+SetBackgroundColor 255 255 255 225
+PlayAlertSound 16 300
+PlayEffect Orange
+MinimapIcon 2 Orange Diamond
+
+
+# -- Currency Tier 1 --
+
+Show
+Class "Currency"
+BaseType "Gemcutter's Prism" "Orb of Annulment" "Orb of Chance" "Lesser Jeweller's Orb" "Glassblower's Bauble"
+SetFontSize 35
+SetTextColor 255 175 85
+SetBorderColor 255 175 85
+SetBackgroundColor 120 47 1 240
+PlayAlertSound 4 300
+PlayEffect Orange
+MinimapIcon 1 Yellow Cross
+
+
+# -- Currency Tier 2 --
+
+Show
+Class "Currency"
+BaseType  "Chaos Orb" "Orb of Alchemy" "Vaal Orb" "Regal Orb" "Glassblower's Bauble" "Artificer's Orb" "Artificer's Shard" "Transmutation Shard" "Regal Shard"  "Armourer's Scrap" "Blacksmith's Whetstone" "Arcanist's Etcher" "Chance Shard"
+SetFontSize 30
+SetTextColor 255 175 85
+SetBorderColor 200 130 50 0
+SetBackgroundColor 36 14 0 240
+PlayAlertSound 2 300
+#PlayEffect Orange
+MinimapIcon 1 Yellow Circle
+
+
+# -- Currency Tier 3 --
+
+Hide
+Class "Currency"
+BaseType "Orb of Transmutation" "Orb of Augmentation" "Scroll of Wisdom"
+SetFontSize 25
+SetTextColor 200 130 50
+SetBorderColor 200 130 50 0
+SetBackgroundColor 15 10 0 240
+
+
+# -- Artifacts, Essense & Distilled --
+
+Show
+Class "Currency"
+BaseType " Artifact" " Coinage" "Distilled" "Essence" " Logbook"
+SetFontSize 35
+SetTextColor 235 225 255
+SetBorderColor 235 225 255
+SetBackgroundColor 35 35 0 240
+PlayAlertSound 1 300
+PlayEffect White
+MinimapIcon 2 White Circle
+
+
+# -- Breach & Related --
+
+Show
+Class "Currency"
+BaseType " Splinter"
+SetFontSize 40
+SetTextColor 175 35 235
+SetBorderColor 175 35 235
+SetBackgroundColor 35 0 50 240
+PlayEffect Purple
+PlayAlertSound 6 300
+MinimapIcon 2 Purple Kite
+
+Show
+Class "Currency"
+BaseType "Catalyst"
+SetFontSize 40
+SetTextColor 175 35 235
+SetBorderColor 175 35 235
+SetBackgroundColor 75 1 107 240
+PlayEffect Purple
+PlayAlertSound 6 300
+MinimapIcon 2 Purple Kite
+
+
+# -- Trials & Invitations --
+
+Show
+BaseType "Simulacrum" "Tablet" "Breachstone" "Barya" "Ultimatum" " Fragment" "Cowardly Fate" "Deadly Fate" "Victorious Fate"
+SetFontSize 35
+SetTextColor 200 100 255
+SetBorderColor 255 255 255
+SetBackgroundColor 140 1 136 240
+PlayAlertSound 6 300
+PlayEffect Purple
+MinimapIcon 2 Pink Triangle
+SetFontSize 35
+
+
+# -- Pinnacle Keys --
+
+Show
+Class "Pinnacle Keys"
+SetFontSize 45
+SetTextColor 200 100 255
+SetBorderColor 200 100 255
+SetBackgroundColor 75 0 100 240
+PlayAlertSound 16 300
+PlayEffect Purple
+MinimapIcon 1 Purple Star
+
+
+# -- Sekemath's Keys & Relics --
+
+Show
+Class "Currency"
+BaseType "Gold Key"
+SetFontSize 45
+SetTextColor 255 195 50
+SetBorderColor 255 195 50
+SetBackgroundColor 125 95 0 240
+PlayAlertSound 1 300
+PlayEffect Orange
+MinimapIcon 1 Orange Circle
+
+Show
+Class "Currency"
+BaseType "Silver Key"
+SetFontSize 35
+SetTextColor 200 200 200
+SetBorderColor 200 200 200
+SetBackgroundColor 50 50 50 240
+PlayAlertSound 1 300
+PlayEffect White
+MinimapIcon 1 White Circle
+
+Show
+Class "Currency"
+BaseType "Bronze Key"
+SetFontSize 30
+SetTextColor 255 150 75
+SetBorderColor 255 150 75
+SetBackgroundColor 100 25 0 240
+PlayAlertSound 1 300
+PlayEffect Brown
+MinimapIcon 1 Brown Circle
+
+Show
+BaseType " Relic"
+SetFontSize 35
+SetTextColor 35 200 215
+SetBorderColor 35 200 215 0
+SetBackgroundColor 0 50 50 225
+#PlayAlertSound 2 300
+#PlayEffect Cyan
+MinimapIcon 1 Cyan Circle
+
+
+# -- Unknown Currency & Fragments --
+
+Show
+Class "Currency"
+SetTextColor 100 150 255
+SetBorderColor 100 150 255
+SetBackgroundColor 0 35 100 225
+PlayAlertSound 2 300
+PlayEffect Blue
+MinimapIcon 1 Blue Circle
+
+
+# -- Equipment --
+
+
+Show
+Rarity == Rare
+BaseType "Expert" " Ring" " Amulet" " Belt" " Wand"
+SetFontSize 35
+SetTextColor 255 235 85
+SetBorderColor 255 235 85
+SetBackgroundColor 100 80 0 225
+PlayAlertSound 2 300
+PlayEffect Yellow
+MinimapIcon 1 Yellow Star
+
+Hide
+Rarity == Rare
+Class "Helmet" "Body Armour" "Gloves" "Boots" "Amulet" "Ring" "Belt" "Flask" "Claw" "Dagger" "Sword" "Axe" "Mace" "Sceptre" "Spear" "Flail" "Bow" "Stave" "Quarterstaff" "Crossbow" "Trap" "Fishing Rod" "Quiver" "Shield" "Foci"
+SetFontSize 35
+SetTextColor 255 235 85
+SetBorderColor 255 235 85 0
+SetBackgroundColor 100 80 0 225
+#PlayAlertSound 1 300
+#PlayEffect Yellow
+#MinimapIcon 1 Yellow Star
+
+Hide
+Rarity == Magic
+Class "Helmet" "Body Armour" "Gloves" "Boots" "Amulet" "Ring" "Belt" "Flask" "Claw" "Dagger" "Wand" "Sword" "Axe" "Mace" "Sceptre" "Spear" "Flail" "Bow" "Stave" "Quarterstaff" "Crossbow" "Trap" "Fishing Rod" "Quiver" "Shield" "Foci"
+SetFontSize 35
+SetTextColor 100 150 255
+SetBorderColor 100 150 255 0
+SetBackgroundColor 0 0 75 225
+
+Show
+Rarity == Normal
+BaseType == "Stellar Amulet" "Breach Ring"
+SetFontSize 35
+SetTextColor 200 200 200
+SetBorderColor 200 200 200
+SetBackgroundColor 25 25 25 240
+PlayAlertSound 6 300
+PlayEffect White
+MinimapIcon 2 Purple Kite
+
+Show
+Rarity == Normal
+Class "Amulet" "Ring" "Sceptre"
+SetFontSize 35
+SetTextColor 200 200 200
+SetBorderColor 200 200 200 0
+SetBackgroundColor 25 25 25 240
+
+Hide
+Rarity == Normal
+Class "Helmet" "Body Armour" "Gloves" "Boots"  "Belt" "Flask" "Claw" "Dagger" "Wand" "Sword" "Axe" "Mace" "Spear" "Flail" "Bow" "Stave" "Quarterstaff" "Crossbow" "Trap" "Fishing Rod" "Quiver" "Shield" "Foci"
+SetFontSize 35
+SetTextColor 200 200 200
+SetBorderColor 200 200 200 0
+SetBackgroundColor 25 25 25 240
+
+
+# -- Jewels --
+
+Show
+Class "Jewel"
+BaseType "Sapphire" "Ruby" "Emerald"
+SetFontSize 35
+SetTextColor 50 100 255
+SetBorderColor 50 100 255
+SetBackgroundColor 0 15 40 240
+PlayAlertSound 12 300
+PlayEffect Blue
+MinimapIcon 1 Blue Circle
+
+
+# -- Runes --
+
+Show
+BaseType " Rune"
+SetFontSize 25
+SetTextColor 255 255 255
+SetBorderColor 255 255 255
+SetBackgroundColor 2 149 212 240
+#PlayAlertSound 1 300
+#PlayEffect White
+MinimapIcon 1 Blue Moon
+
+
+# -- Charms --
+
+Hide
+BaseType " Charm"
+SetFontSize 35
+SetTextColor 235 225 150
+SetBorderColor 235 225 150 0
+SetBackgroundColor 35 35 0 240
+#PlayAlertSound 1 300
+#PlayEffect White
+#MinimapIcon 1 White Circle
+
+
+# -- Waystones --
+
+# High-Tier Waystones
+
+Show
+BaseType "Waystone"
+SetFontSize 35
+WaystoneTier >= 13
+Rarity <= Rare
+SetTextColor 212 2 2
+SetBorderColor 0 0 0
+SetBackgroundColor 225 225 225 225
+PlayAlertSound 8 200
+PlayEffect Red
+MinimapIcon 1 Red Circle
+
+# High-Tier Waystones (Hide lower 13)
+
+Hide
+BaseType "Waystone"
+SetFontSize 35
+WaystoneTier >= 11
+Rarity <= Rare
+SetTextColor 0 0 0
+SetBorderColor 255 0 0
+SetBackgroundColor 225 225 225 225
+#PlayAlertSound 5 200
+#PlayEffect Red
+#MinimapIcon 1 Red Circle
+
+# Mid-Tier Waystones (Hide)
+
+Hide
+BaseType "Waystone"
+SetFontSize 35
+WaystoneTier >= 6
+Rarity <= Rare
+SetTextColor 0 0 0
+SetBorderColor 255 200 0
+SetBackgroundColor 225 225 225 225
+#PlayAlertSound 2 200
+#PlayEffect Yellow
+#MinimapIcon 1 Yellow Circle
+
+# Low-Tier Waystones (Hide)
+
+Hide
+BaseType "Waystone"
+SetFontSize 35
+WaystoneTier >= 1
+Rarity <= Rare
+SetTextColor 0 0 0
+SetBorderColor 255 255 255
+SetBackgroundColor 225 225 225 225
+#PlayAlertSound 2 200
+#PlayEffect White
+#MinimapIcon 1 White Circle
+
+
+
+
