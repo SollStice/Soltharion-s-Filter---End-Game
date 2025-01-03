@@ -340,16 +340,12 @@ BaseEnergyShield > 0
 Hide
 BaseType = "Long Quarter" "Barrier Quarter" "Serrated Quiver" "Toxic Quiver" "Blunt Quiver" "Crackling Quarter"
 
-Show
-Rarity = Rare
-Class = "Quiver"
-SetFontSize 40
-SetBorderColor 0 240 190 255
-SetBackgroundColor 20 20 0 255
+
+###Custom Highlight of items
 
 Show
 Rarity = Rare
-BaseType = "Expert Dualstring" "Expert Zealot"
+BaseType = "Expert Quarterstaff"
 SetFontSize 45
 SetBorderColor 0 240 190 255
 SetBackgroundColor 20 20 0 255
@@ -363,26 +359,8 @@ SetBackgroundColor 20 20 0 255
 
 Show
 Rarity = Rare
-Class = "Quarter" "Crossbows"
 BaseType = "Expert"
-SetFontSize 32
-
-Show
-Rarity = Rare
-Class "Mace" "Quarter" "Crossbows" "Bows" "Belt"
-AreaLevel >= 65
-SetFontSize 32
-
-Show
-Rarity = Rare
-Class = "Quiver"
-SetFontSize 40
-SetBorderColor 0 240 190 255
-SetBackgroundColor 20 20 0 255
-
-Show
-Rarity = Rare
-Class = "Flask" "Body" "Helmet" "Boots" "Sceptre" "Foci" "Quiver" "Belt" "Gloves"
+Class = "Helmet" "Body Armour" "Gloves" "Boots" "Amulet" "Ring" "Belt" "Flask" "Claw" "Dagger" "Sword" "Axe" "Mace" "Sceptre" "Spear" "Flail" "Bow" "Stave" "Quarterstaff" "Crossbow" "Trap" "Fishing Rod" "Quiver" "Shield" "Foci"
 BaseType = "Expert"
 AreaLevel >= 65
 SetFontSize 32
@@ -393,12 +371,11 @@ Class = "Helmet" "Boots" "Gloves"
 AreaLevel >= 65
 SetFontSize 32
 
-Hide
-Rarity = Rare
-Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Staff" "Sceptre" "Foci" "Quiver" "Belt" "Shields" "Mace" "Wand"
-AreaLevel >= 65
-SetFontSize 32
-
+#Hide
+ Rarity = Rare
+#Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Staff" "Sceptre" "Foci" "Quiver" "Belt" "Shields" "Mace" "Wand"
+#AreaLevel >= 65
+#SetFontSize 32
 
 Hide
 Rarity <= Magic
