@@ -345,7 +345,7 @@ BaseType = "Long Quarter" "Barrier Quarter" "Serrated Quiver" "Toxic Quiver" "Bl
 
 Show
 Rarity = Rare
-BaseType = "Expert Quarterstaff"
+BaseType = "Expert Crescent Quarterstaff"
 SetFontSize 45
 SetBorderColor 0 240 190 255
 SetBackgroundColor 20 20 0 255
@@ -355,7 +355,7 @@ MinimapIcon 2 Yellow Star
 
 Show
 Rarity = Rare
-BaseType = "Ratteled Sceptre"
+BaseType = "Rattling Sceptre"
 SetFontSize 40
 SetBorderColor 0 240 190 255
 SetBackgroundColor 20 20 0 255
