@@ -349,13 +349,19 @@ BaseType = "Expert Quarterstaff"
 SetFontSize 45
 SetBorderColor 0 240 190 255
 SetBackgroundColor 20 20 0 255
+PlayAlertSound 2 300
+PlayEffect Yellow
+MinimapIcon 2 Yellow Star
 
 Show
 Rarity = Rare
-BaseType = "Attuned Wand" "Siphoning Wand"
+BaseType = "Ratteled Sceptre"
 SetFontSize 40
 SetBorderColor 0 240 190 255
 SetBackgroundColor 20 20 0 255
+PlayAlertSound 2 300
+PlayEffect Yellow
+MinimapIcon 1 Yellow Star
 
 Show
 Rarity = Rare
@@ -364,18 +370,9 @@ Class = "Helmet" "Body Armour" "Gloves" "Boots" "Amulet" "Ring" "Belt" "Flask" "
 BaseType = "Expert"
 AreaLevel >= 65
 SetFontSize 32
-
-Show
-Rarity = Rare
-Class = "Helmet" "Boots" "Gloves"
-AreaLevel >= 65
-SetFontSize 32
-
-#Hide
- Rarity = Rare
-#Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Staff" "Sceptre" "Foci" "Quiver" "Belt" "Shields" "Mace" "Wand"
-#AreaLevel >= 65
-#SetFontSize 32
+PlayAlertSound 2 300
+PlayEffect Yellow
+MinimapIcon 1 Yellow Star
 
 Hide
 Rarity <= Magic
